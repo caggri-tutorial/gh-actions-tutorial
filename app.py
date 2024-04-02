@@ -1,8 +1,10 @@
+"""A simple Flask web application."""
 from flask import Flask
 app = Flask(__name__)
 
 @app.route('/')
 def hello_geek():
+    """Returns a greeting."""
     return '<h1>Hello from Flask & Docker</h2>'
 
 
